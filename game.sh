@@ -16,12 +16,13 @@ if ping -q -c 1 -W 1 8.8.8.8 >/dev/null;
 then
 echo "$welcome"
 update=$(rm -rf game ;git clone https://github.com/topengs/game)
+cp -rf game $HOME/.game ;rm -rf game
 else
 echo "$welcome"
 fi
 
 #tampilan menu
-cp -rf game $HOME/.game ;rm -rf game ;echo $m ;figlet games
+echo $m ;figlet games
 echo "$h 1 >$n tetris"
 echo "$h 2 >$n serakah"
 echo "$h 3 >$n moon-puggy"
