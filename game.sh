@@ -87,7 +87,7 @@ pkg update
 pkg install figlet -y && pkg install nudoku nethack nsnake ninvaders moon-buggy greed bastet -y
 echo $m
 figlet sijhon
-echo "$h penginstalan sukses" ;sleep 5 ;sh game.sh
+echo "$h penginstalan sukses" ;sleep 5 ;cd;sh game.sh
 ;;
 9)
 echo $m
@@ -101,7 +101,7 @@ echo "$h sain u u ta sain u u"
 echo "$k artinya terima kasih" ;echo ""
 ;;
 *)
-echo "$h game yang dipilih tidak ditemukan" ;sleep 5 ;sh game.sh
+echo "$h game yang dipilih tidak ditemukan" ;sleep 5 ;cd;sh game.sh
 exit
 esac
 exit
