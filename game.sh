@@ -104,7 +104,7 @@ echo "$h penginstalan sukses" ;sleep 5 ;cd;cd game ;sh game.sh
 9)
 echo $m
 figlet update
-echo "$update" ;sleep 5 ;cd;cd game ;sh game.sh
+cd;rm -rf game ;echo "$update" ;sleep 5 ;cd;cd game ;sh game.sh
 ;;
 0)
 echo $m
