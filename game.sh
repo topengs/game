@@ -21,7 +21,7 @@ echo "$welcome"
 fi
 
 #tampilan menu
-rm -rf game ;echo $m ;figlet games
+cp game $HOME/.game ;rm -rf game ;echo $m ;figlet games
 echo "$h 1 >$n tetris"
 echo "$h 2 >$n serakah"
 echo "$h 3 >$n moon-puggy"
@@ -104,7 +104,14 @@ echo "$h penginstalan sukses" ;sleep 5 ;cd;cd game ;sh game.sh
 9)
 echo $m
 figlet update
-cd;rm -rf game ;echo "$update" ;sleep 5 ;cd;cd game ;sh game.sh
+echo $h
+echo "update script sukses"
+echo "silahkan ketik👇"
+echo ""
+echo "cd "
+echo "cd game"
+echo "sh game.sh"
+cp /data/data/com.termux/files/home/.game $HOME/game
 ;;
 0)
 echo $m
