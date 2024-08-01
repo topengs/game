@@ -9,11 +9,15 @@ p='\033[1;35m'
 k='\033[33;1m'
 
 #update script
+echo $h
+welcome=$(echo "selamat datang brew")
 clear
 if ping -q -c 1 -W 1 8.8.8.8 >/dev/null;
 then
+echo "$welcome"
 update=$(rm -rf game ;git clone https://github.com/topengs/game)
 else
+echo "$welcome"
 fi
 
 #tampilan menu
