@@ -1,3 +1,6 @@
+#!/bin/shell
+
+#warna
 n='\033[0m'
 h='\033[32;1m'
 m='\033[31;1m'
@@ -5,11 +8,16 @@ c='\033[36;1m'
 p='\033[1;35m'
 k='\033[33;1m'
 
+#update script
+clear
+if ping -q -c 1 -W 1 8.8.8.8 >/dev/null;
+then
 update=$(rm -rf game ;git clone https://github.com/topengs/game)
+else
+fi
 
-echo $m
-figlet games
-cd
+#tampilan menu
+rm -rf game ;echo $m ;figlet games
 echo "$h 1 >$n tetris"
 echo "$h 2 >$n serakah"
 echo "$h 3 >$n moon-puggy"
