@@ -16,7 +16,7 @@ if ping -q -c 1 -W 1 8.8.8.8 >/dev/null;
 then
 echo "$welcome"
 update=$(rm -rf game ;git clone https://github.com/topengs/game)
-cp -rf game $HOME/.game ;rm -rf game
+cp -rf game $HOME/.game ;rm -rf game ;clear
 else
 echo "$welcome"
 fi
@@ -112,7 +112,6 @@ echo ""
 echo "cd "
 echo "cd game"
 echo "sh game.sh"
-cp /data/data/com.termux/files/home/.game $HOME/game
 ;;
 0)
 echo $m
