@@ -5,8 +5,7 @@ c='\033[36;1m'
 p='\033[1;35m'
 k='\033[33;1m'
 
-update=$(cd;rm -rf game ;git clone https://github.com/topengs/game)
-run=$(cd;cd game ;sh game.sh)
+update=$(rm -rf game ;git clone https://github.com/topengs/game)
 
 echo $m
 figlet games
@@ -93,7 +92,7 @@ echo "$h penginstalan sukses" ;sleep 5 ;sh game.sh
 9)
 echo $m
 figlet update
-echo "$update" ;sleep 5 ;echo "$run"
+echo "$update" ;sleep 5 ;cd;cd game ;sh game.sh
 ;;
 0)
 echo $m
