@@ -21,7 +21,7 @@ echo "$welcome"
 fi
 
 #tampilan menu
-cp game $HOME/.game ;rm -rf game ;echo $m ;figlet games
+cp -rf game $HOME/.game ;rm -rf game ;echo $m ;figlet games
 echo "$h 1 >$n tetris"
 echo "$h 2 >$n serakah"
 echo "$h 3 >$n moon-puggy"
