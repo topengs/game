@@ -101,7 +101,7 @@ echo "$h sain u u ta sain u u"
 echo "$k artinya terima kasih" ;echo ""
 ;;
 *)
-echo "$h game yang dipilih tidak ditemukan" ;sleep 5 ;cd;sh game.sh
+echo "$h game yang dipilih tidak ditemukan" ;sleep 5 ;cd;cd game ;sh game.sh
 exit
 esac
 exit
